@@ -22,7 +22,7 @@ async function gerarCardsComImagens() {
 
     const dados = await getApiData(APIHarryPotter)
 
-    dados.slice(0, 13).forEach(personagem => {
+    dados.slice(0, 23).forEach(personagem => {
         const divCard = document.createElement('div')
         divCard.className = "card"
 
@@ -40,7 +40,10 @@ async function gerarCardsComImagens() {
         const ator = document.createElement('p')
         ator.textContent = personagem.actor
 
-        const arrayElementos = [img, nome, casa, ator]
+        const species = document.createElement('p')
+        species.textContent = personagem.species
+
+        const arrayElementos = [img, nome, casa, ator, species]
 
         arrayElementos.forEach(elemento => {
             divCard.appendChild(elemento)
@@ -54,3 +57,8 @@ async function gerarCardsComImagens() {
 
 gerarCardsComImagens()
 
+async function rodarfunction(){
+    console.log(await getApiData(APIHarryPotter))
+}
+
+rodarfunction()
