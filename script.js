@@ -1,8 +1,6 @@
 // Consumo da API
 
 let APIHarryPotter = 'http://hp-api.herokuapp.com/api/characters'
-let APIStarWars = 'https://swapi.dev/api/people/1'
-const card = document.getElementById('card')
 const cards = document.getElementById('cards')
 
 
@@ -15,7 +13,6 @@ const getApiData = async (urlApi) => {
         const dadosConvertidos = respostaAPI.json()
         
         return dadosConvertidos
-
     }
 
 }
