@@ -1,44 +1,4 @@
-// let arrayNumeros = [1,2,3,4,5,6,7,8,9]
-
-// let arrayNumeroMaioresQuatro = []
-
-
-// Este abaixo e um exemplo de objeto simples referente a um carro;
-// um Objeto e um grupo de dados referente a alguma coisa
-
-// let carro  = {
-
-//     marca: 'Chevrolet',
-//     modelo: 'Corvette',
-//     ano: '2022',
-//     cor: 'Laranja'
-
-// }
-
-// console.log(carro.marca);
-
-
-// Exemplo 1, For Each
-// Ele percorre o array e faz alguma coisa com cada valor do array
-
-// arrayNumeros.forEach(numero => {
-    
-//     if (numero > 4) {
-//         arrayNumeroMaioresQuatro.push(numero)
-//     }
-
-// });
-
-// Exemplo 2
-// Loop for faz algo baseado na quantidade de vezes que o loop rodar
-// se especifica essa quantidade no propio for
-
-// for (let batata = 0; batata < 5; batata++) {
-
-//     console.log(batata);
-
-// }
-
+// Consumo da API
 
 let APIHarryPotter = 'http://hp-api.herokuapp.com/api/characters'
 let APIStarWars = 'https://swapi.dev/api/people/1'
