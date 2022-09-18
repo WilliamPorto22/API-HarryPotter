@@ -5,13 +5,13 @@ const cards = document.getElementById('cards')
 
 
 const getApiData = async (urlApi) => {
-    
+
     const respostaAPI = await fetch(urlApi)
 
     if (respostaAPI.status === 200) {
-    
+
         const dadosConvertidos = respostaAPI.json()
-        
+
         return dadosConvertidos
     }
 
@@ -49,7 +49,26 @@ async function gerarCardsComImagens() {
         const hairColour = document.createElement('p')
         hairColour.textContent = (`Hair Colour: ${personagem.hairColour}`)
 
-        const arrayElementos = [img, nome, casa, species, actor , dateOfBirth , hairColour
+        const eyeColour = document.createElement('p')
+        eyeColour.textContent = (`Eye Colour: ${personagem.eyeColour}`)
+
+        const ancestry = document.createElement('p')
+        ancestry.textContent = (`Ancestry: ${personagem.ancestry}`)
+
+        const patronus = document.createElement('p')
+        patronus.textContent = (`Patronus: ${personagem.patronus}`)
+
+        const varinha = document.createElement('p')
+        varinha.textContent = (`Varinha:`)
+
+        const wand = document.createElement('p')
+        wand.textContent = (`Nucleo: ${personagem.wand.core}`)
+
+
+
+        const arrayElementos = [img, nome, casa, species, actor, dateOfBirth, hairColour, eyeColour, ancestry, patronus, varinha, wand 
+
+
         ]
 
         arrayElementos.forEach(elemento => {
@@ -64,7 +83,7 @@ async function gerarCardsComImagens() {
 
 gerarCardsComImagens()
 
-async function rodarfunction(){
+async function rodarfunction() {
     console.log(await getApiData(APIHarryPotter))
 }
 
