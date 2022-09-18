@@ -37,13 +37,20 @@ async function gerarCardsComImagens() {
         const casa = document.createElement('p')
         casa.textContent = personagem.house
 
-        const ator = document.createElement('p')
-        ator.textContent = personagem.actor
-
         const species = document.createElement('p')
         species.textContent = personagem.species
 
-        const arrayElementos = [img, nome, casa, ator, species]
+        const actor = document.createElement('p')
+        actor.textContent = personagem.actor
+
+        const dateOfBirth = document.createElement('p')
+        dateOfBirth.textContent = (`Date Birth: ${personagem.dateOfBirth}`)
+
+        const hairColour = document.createElement('p')
+        hairColour.textContent = (`Hair Colour: ${personagem.hairColour}`)
+
+        const arrayElementos = [img, nome, casa, species, actor , dateOfBirth , hairColour
+        ]
 
         arrayElementos.forEach(elemento => {
             divCard.appendChild(elemento)

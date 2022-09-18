@@ -6,13 +6,13 @@ h2 {
     text-align: center;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.card{
+.card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -21,7 +21,32 @@ h2 {
     margin: 1%;
 }
 
-.img{
+.img {
     width: 200px;
     height: 300px;
+}
+
+/* Section Bootstrap */
+
+.navbar-brand {
+    color: #0dcaf0 !important;
+}
+
+.nav-link {
+    color: #0dcaf0 !important;
+}
+
+.btn-outline-success {
+    color: #0dcaf0 !important;
+    border-color: #0dcaf0 !important;
+}
+
+.form-control {
+    color: #0dcaf0 !important;
+    background-color: #0dcaf080 !important;
+}
+
+.btn-outline-success:hover {
+    color: #000000 !important;
+    background-color: #0dcaf0 !important;
 }
