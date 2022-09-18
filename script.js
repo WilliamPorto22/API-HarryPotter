@@ -65,11 +65,17 @@ async function gerarCardsComImagens() {
         wand.textContent = (`Nucleo: ${personagem.wand.core}`)
 
 
+        const length = document.createElement('p')
+        length.textContent = (`Comprimento: ${personagem.wand.length}`)
 
-        const arrayElementos = [img, nome, casa, species, actor, dateOfBirth, hairColour, eyeColour, ancestry, patronus, varinha, wand 
+        const wood = document.createElement('p')
+        wood.textContent = (`Madeira: ${personagem.wand.wood}`)
 
 
+        const arrayElementos = [img, nome, casa, species, actor, dateOfBirth, hairColour,
+            eyeColour, ancestry, patronus, varinha, wand, length ,wood
         ]
+
 
         arrayElementos.forEach(elemento => {
             divCard.appendChild(elemento)

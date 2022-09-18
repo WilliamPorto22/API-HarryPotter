@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: #46686e !important;
 }
 
 h2 {
@@ -26,6 +26,35 @@ h2 {
     height: 300px;
 }
 
+.img-casas{
+    width:90px;
+    margin-left: 10px;
+}
+.gryffindo{
+    background-color: #912136cc !important;
+    color: #000000 !important;
+}
+.slytherin{
+    background-color: #0f3a29a1 !important;
+    color: #000000 !important;
+}
+.hufflepuff{
+    background-color: #cba25bcc !important;
+    color: #000000 !important;
+}
+.revenclaw{
+    background-color: #34657ed1 !important;
+    color: #000000 !important;
+}
+video{
+    width:100%;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background-color: #212529 !important;
+    padding: 3px !important;
+}
+
 /* Section Bootstrap */
 
 .navbar-brand {
@@ -44,6 +73,8 @@ h2 {
 .form-control {
     color: #0dcaf0 !important;
     background-color: #0dcaf080 !important;
+    width: 300px !important;
+    border: none !important;
 }
 
 .btn-outline-success:hover {
