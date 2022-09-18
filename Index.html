@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark" id="Home">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Harry Potter</a>
+            <a class="navbar-brand" href="#Home">Harry Potter</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,25 +28,29 @@
                         <a class="nav-link active" aria-current="page" href="#Personagens">Personagens</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Filmes</a>
+                        <a class="nav-link" href="#Filmes">Filmes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Torneio Tribruxo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Dragões</a>
-                    </li>                    
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Casas de Hogwarts
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item gryffindo" href="#">Gryffindor <img src="Img/Gryffindor.png" width="90px" height="90px"></a>  </li>
-                            <li><a class="dropdown-item slytherin" href="#">Slytherin <img class="img-casas" src="Img/Slytherin.png" width="90px" height="90px"  ></a></li>
-                            <li><a class="dropdown-item hufflepuff" href="#">Hufflepuff <img  src="Img/Hufflepuff.png" width="90px" height="90px"></a></li>
-                            <li><a class="dropdown-item revenclaw" href="#">Ravenclaw <img  src="Img/Revenclaw.png" width="90px" height="90px" ></a></li>
-                        </ul>   
+                            <li><a class="dropdown-item gryffindo" href="#">Gryffindor <img class="img-casas2"
+                                        src="Img/Gryffindor.png"></a> </li>
+                            <li><a class="dropdown-item slytherin" href="#">Slytherin <img class="img-casas"
+                                        src="Img/Slytherin.png"></a></li>
+                            <li><a class="dropdown-item hufflepuff" href="#">Hufflepuff <img class="img-casas2"
+                                        src="Img/Hufflepuff.png"></a></li>
+                            <li><a class="dropdown-item revenclaw" href="#">Ravenclaw <img class="img-casas2"
+                                        src="Img/Revenclaw.png"></a></li>
+                        </ul>
                     </li>
                 </ul>
 
@@ -58,16 +62,116 @@
         </div>
     </nav>
     <main>
-        <!-- <video class="video-carrossel" id="Video" autoplay muted controlsList="nodownload">
+        <!-- <video class="" id="Video" autoplay muted controlsList="nodownload">
             <source src="Img/main.mp4" type="video/mp4">
         </video> -->
-        <img src="Img/harry-potter-5.webp" alt="" srcset="">
+        <img class="Imag-home" src="Img/harry-potter-5.webp" alt="" srcset="">
     </main>
     <section id="Personagens">
-        <h2>PERSONAGENS</h2>
+        <h1>PERSONAGENS</h1>
         <div id="cards" class="cards">
-
         </div>
+    </section>
+
+    <section id="Filmes">
+        <h1>FILMES</h1>
+        <div class="centralizar">
+            <video id="Video" autoplay muted controlsList="nodownload">
+                <source src="Img/main.mp4" type="video/mp4">
+            </video>
+            <div class="alinhar">
+                <img src="Img/filme1.png">
+                <p class="p-trailer">Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursley. Em seu
+                    aniversário de 11 anos ele
+                    recebe uma carta que mudará sua vida: um convite para ingressar em Hogwarts.</p>
+            </div>
+        </div>
+
+        <div class="centralizar">
+            <video id="Video" autoplay muted controlsList="nodownload">
+                <source src="Img/main.mp4" type="video/mp4">
+            </video>
+            <div class="alinhar">
+                <img src="Img/filme2.png">
+                <p class="p-trailer">Prepare-se para mais magia e mistério com o retorno de Harry Potter e seus amigos!
+                    Harry está prestes a começar seu segundo ano na Escola de Magia e Bruxaria de Hogwarts.</p>
+            </div>
+        </div>
+
+        <div class="centralizar">
+            <video id="Video" autoplay muted controlsList="nodownload">
+                <source src="Img/main.mp4" type="video/mp4">
+            </video>
+            <div class="alinhar">
+                <img src="Img/filme3.png">
+                <p class="p-trailer"> Um grande perigo ronda a escola: o assassino Sirius Black (Gary Oldman) fugiu da
+                    prisão de Azkaban, considerada até então como à prova de fugas.
+                </p>
+            </div>
+        </div>
+
+        <div class="centralizar">
+            <video id="Video" autoplay muted controlsList="nodownload">
+                <source src="Img/main.mp4" type="video/mp4">
+            </video>
+            <div class="alinhar">
+                <img src="Img/filme4.png">
+                <p class="p-trailer"> Com o início das aulas, Harry sai da casa dos tios e encontra os amigos Ronny e
+                    Hermione para ver a Copa Mundial de Quadribol.
+                </p>
+            </div>
+        </div>
+
+        <div class="centralizar">
+            <video id="Video" autoplay muted controlsList="nodownload">
+                <source src="Img/main.mp4" type="video/mp4">
+            </video>
+            <div class="alinhar">
+                <img src="Img/filme5.png">
+                <p class="p-trailer">Harry descobre que Alvo Dumbledore, diretor de Hogwarts, fundou a Ordem da Fênix,
+                    composta por bruxos de sua confiança, cuja missão é trabalhar...
+                </p>
+            </div>
+        </div>
+
+        <div class="centralizar">
+            <video id="Video" autoplay muted controlsList="nodownload">
+                <source src="Img/main.mp4" type="video/mp4">
+            </video>
+            <div class="alinhar">
+                <img src="Img/filme6.png">
+                <p class="p-trailer">Encorajados pelo retorno de Voldemort, Comensais da Morte estão causando o caos
+                    tanto no mundo dos trouxas quanto no dos bruxos e Hogwarts deixou de ser o paraíso seguro que já foi
+                    um dia.
+                </p>
+            </div>
+        </div>
+
+        <div class="centralizar">
+            <video id="Video" autoplay muted controlsList="nodownload">
+                <source src="Img/main.mp4" type="video/mp4">
+            </video>
+            <div class="alinhar">
+                <img src="Img/filme7.png">
+                <p class="p-trailer">Harry foi sobrecarregado com uma tarefa sombria, perigosa e aparentemente
+                    impossível: localizar e destruir as Horcruxes restantes de Voldemort.
+                </p>
+            </div>
+        </div>
+
+        <div class="centralizar">
+            <video id="Video" autoplay muted controlsList="nodownload">
+                <source src="Img/main.mp4" type="video/mp4">
+            </video>
+            <div class="alinhar">
+                <img src="Img/filme8.png">
+                <p class="p-trailer">No final épico, a batalha entre as forças do bem e do mal no mundo da bruxaria toma
+                    proporções de uma guerra mundial.
+                </p>
+            </div>
+        </div>
+
+
     </section>
 </body>
 

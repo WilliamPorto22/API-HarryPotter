@@ -2,13 +2,21 @@ body {
     background-color: #46686e !important;
 }
 
-h2 {
+h1 {
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
     text-align: center;
     font-size: 50px !important;
     color: #5ddcff;
 }
 
-img{
+h2 {
+    text-align: center;
+    font-size: 50px !important;
+    color: #212529;
+}
+
+.Imag-home{
     width: 100% !important;
     height: 610px;
 }
@@ -104,6 +112,12 @@ p {
     width:90px;
     margin-left: 10px;
 }
+
+.img-casas2{
+    width:90px;
+    height: 90px;
+}
+
 .gryffindo{
     background-color: #912136cc !important;
     color: #000000 !important;
@@ -120,8 +134,28 @@ p {
     background-color: #34657ed1 !important;
     color: #000000 !important;
 }
+
 video{
-    width:100%;
+    width:60%;
+    border-radius: 11px;
+    margin: 10px;
+}
+
+.p-trailer{
+    font-size: 18px !important;
+    color:#ffffff;
+    margin: 30px;
+}
+
+.alinhar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centralizar{
+    display: flex;
+    align-items: center;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
