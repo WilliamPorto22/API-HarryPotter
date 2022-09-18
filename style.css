@@ -4,7 +4,19 @@ body {
 
 h2 {
     text-align: center;
+    font-size: 50px !important;
+    color: #5ddcff;
 }
+
+img{
+    width: 100% !important;
+    height: 610px;
+}
+
+/* #Personagens{
+    background-image: url(Img/Mapa.jpg);
+    background-size: contain;
+} */
 
 .cards {
     display: flex;
@@ -26,7 +38,6 @@ p {
     margin-bottom: 2px !important;
     color: white;
 }
-
 
 .card:before {
     content: "";
@@ -85,8 +96,8 @@ p {
 }
 
 .img {
-    width: 200px;
-    height: 300px;
+    width: 240px !important;
+    height: 310px
 }
 
 .img-casas{
