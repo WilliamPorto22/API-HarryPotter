@@ -17,8 +17,71 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background-color: antiquewhite;
-    margin: 1%;
+    background-color: #41464b !important;
+    margin: 3%;
+}
+
+p {
+    font-size: 13px !important;
+    margin-bottom: 2px !important;
+    color: white;
+}
+
+
+.card:before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card:after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+.card:hover:after{
+    background: none;
+    transition: opacity 2s;
+}
+
+:root {
+    --card-height: 365px;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+@property --rotate {    
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
 }
 
 .img {

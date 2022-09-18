@@ -32,28 +32,28 @@ async function gerarCardsComImagens() {
         img.className = "img";
 
         const nome = document.createElement('p')
-        nome.textContent = personagem.name
+        nome.textContent =  (`Nome: ${personagem.name}`)
 
         const casa = document.createElement('p')
-        casa.textContent = personagem.house
+        casa.textContent = (`Casa: ${ personagem.house }`)
 
         const species = document.createElement('p')
-        species.textContent = personagem.species
+        species.textContent =  (`Species: ${ personagem.species }`)
 
         const actor = document.createElement('p')
-        actor.textContent = personagem.actor
+        actor.textContent =  (`Ator: ${ personagem.actor }`)
 
         const dateOfBirth = document.createElement('p')
-        dateOfBirth.textContent = (`Date Birth: ${personagem.dateOfBirth}`)
+        dateOfBirth.textContent = (`Nasceu: ${personagem.dateOfBirth}`)
 
         const hairColour = document.createElement('p')
-        hairColour.textContent = (`Hair Colour: ${personagem.hairColour}`)
+        hairColour.textContent = (`Cor do Cabelo: ${personagem.hairColour}`)
 
         const eyeColour = document.createElement('p')
-        eyeColour.textContent = (`Eye Colour: ${personagem.eyeColour}`)
+        eyeColour.textContent = (`Cor do Olhos: ${personagem.eyeColour}`)
 
         const ancestry = document.createElement('p')
-        ancestry.textContent = (`Ancestry: ${personagem.ancestry}`)
+        ancestry.textContent = (`Ancestrais: ${personagem.ancestry}`)
 
         const patronus = document.createElement('p')
         patronus.textContent = (`Patronus: ${personagem.patronus}`)
@@ -63,7 +63,6 @@ async function gerarCardsComImagens() {
 
         const wand = document.createElement('p')
         wand.textContent = (`Nucleo: ${personagem.wand.core}`)
-
 
         const length = document.createElement('p')
         length.textContent = (`Comprimento: ${personagem.wand.length}`)
